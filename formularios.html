@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Satisfação</title>
+</head>
+
+<body>
+    <h1>Formulário de Satisfação</h1>
+    <H2>Nos avalie! Isto nos ajuda a melhorar e aperfeiçoar nosso trabalho!</H2>
+    <form action="enviar_formulario.html" method="post">
+        <section>
+            <h3>Dados pessoais</h3>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+        </section>
+        <section>
+            <h3>Respostas</h3>
+            <div>
+                <p>De 1 a 5, como você avalia a velocidade do nosso atendimento?</p>
+                <input type="radio" name="velocidade" id="1">
+                <label for="1">1</label>
+                <input type="radio" name="velocidade" id="2">
+                <label for="2">2</label>
+                 <input type="radio" name="velocidade" id="3">
+                <label for="3">3</label>
+                 <input type="radio" name="velocidade" id="4">
+                <label for="4">4</label>
+                 <input type="radio" name="velocidade" id="5">
+                <label for="5">5</label>
+            </div>
+
+            <div>
+                <p>Qual foi a sua opinião sobre a qualidade do nosso atendimento?</p>
+                <input type="radio" name="qualidade" id="1">
+                <label for="1">1</label>
+                <input type="radio" name="qualidade" id="2">
+                <label for="2">2</label>
+                 <input type="radio" name="qualidade" id="3">
+                <label for="3">3</label>
+                 <input type="radio" name="qualidade" id="4">
+                <label for="4">4</label>
+                 <input type="radio" name="qualidade" id="5">
+                <label for="5">5</label>
+            </div>
+
+            <div>
+                <p>Qual foi a sua satisfação com o produto/serviço?</p>
+                <select id="satisfacao" name="satisfacao">
+                    <option value="excelente">Excelente</option>
+                    <option value="bom">Bom</option>
+                    <option value="regular">Regular</option>
+                    <option value="ruim">Ruim</option>
+                </select>
+            </div>
+            <br>
+        </section>
+        <div>
+            <input type="checkbox" id="autorizar" name="autorizar">
+            <label for="autorizar">Eu autorizo o compartilhamento das minhas respostas com terceiros.</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
